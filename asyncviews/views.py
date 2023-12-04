@@ -16,10 +16,10 @@ async def http_call_async():
 def http_call_sync():
     multi = 10
     for num in range(1, 6):
-        multi = multi * 2
+        multi = multi * 10
         sleep(1)
         print(multi)
-    print('loop finalizado')
+    print('loop finalization')
     r = httpx.get('https://httpbin.org/')
     print(r)
 
